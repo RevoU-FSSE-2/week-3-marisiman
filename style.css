@@ -1,0 +1,564 @@
+/*-----------------------------------------------------ASSIGNMENT-WEEK-2-------------------------------------------------------------*/
+
+
+
+/*-----main body-----*/
+body {
+    /*font-style: courier,arial,helvetica;*/
+    background-color: rgb(208, 229, 178);
+    margin:0%;
+  }
+
+/*-----navigasi-----*/
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    background: linear-gradient(to bottom, #f05053 50%, rgb(208, 229, 178));
+    z-index: 99;
+  }
+
+
+
+.main-logo {
+    position: relative;
+  }
+
+nav > span {
+    display: flex;
+    align-items: center;
+  }
+
+nav > span > img {
+    height: 32px;
+    width: auto;
+    padding: 5px;
+  }
+
+em {
+    color: rgb(100, 154, 18);
+    font-family: courier,arial,helvetica;
+    text-shadow: 0.5px 0.5px 0px #D7DACC, 3px 3px 0px rgba(0,0,0,0.1);
+  }
+
+nav .copyright {
+  font-size: x-small;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 18px;
+  right: -7px;
+  }
+
+/*.desktop {
+    display: block;
+  }*/
+
+nav > ul {
+    margin-left: auto;
+    margin-right: 16px;
+  }
+
+nav > ul > li {
+    display: inline-block;
+    color: rgb(100, 154, 18);
+    font-style: oblique;
+  }
+
+nav > ul > li > a {
+    color: rgb(13, 19, 5);
+    font-family: serif;
+    font-size: medium;
+    margin-right: 5px;
+  }
+
+.menubar a:hover{
+    cursor: pointer;
+    padding-top: 5px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-bottom: 0px;
+    color: darkblue;
+    text-shadow: 0.2px 0.2px 0px #D7DACC, 8px 8px 0px rgba(0,0,0,0.1);
+    font-size: 18px;
+  }
+
+/*-----first header-----*/
+
+header {
+    text-align: center;
+    background:white;
+    background-blend-mode: normal, lighten, soft-light;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 48px;
+  }
+
+/*---------------------------mading bergerak------------------------------*/  
+.animasi-slider { 
+	position: relative; 
+	overflow: hidden; 
+
+}
+ 
+.animasi-slider { 
+	margin:10px auto;
+	width: 800px;
+	height: 450px; 
+}
+ 
+.isi-slider img { 
+	width: 10%;
+	height: 300px; 
+	float: left;
+}
+ 
+.isi-slider { 
+	position: absolute;
+	width:4500px;  
+ 
+	/*pengaturan durasi lama tampil gambar*/
+	animation-name:slider;
+	animation-duration:5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+}
+ 
+ 
+	/*penampil animasinya*/ 
+ 
+@keyframes slider {     
+	0% {
+		left: -10px; opacity: 1; 
+	}      
+
+	10% {
+		left: -10px; opacity: 1; 
+	}     
+
+	20% {
+		left: -468px; opacity: 1; 
+	}   
+
+  25% {
+		left: -468px; opacity: 1; 
+	}   
+    
+	35% {
+		left: -920px; opacity: 1; 
+	}     
+   
+	40% {
+		left: -920px; opacity: 1; 
+	}  
+
+	50% {
+		left: -1395px; opacity: 1; 
+	}     
+
+	55% {
+		left: -1395px; opacity: 1; 
+	} 
+
+	65% {
+		left: -1810px; opacity: 1; 
+	} 
+
+	70% { 
+		left: -1810px; opacity: 1; 
+	} 
+
+  80% {
+		left: -2270px; opacity: 1; 
+	} 
+
+	85% { 
+		left: -2270px; opacity: 1; 
+	} 
+ 
+	100% {
+		left: -10px; opacity: 1; 
+	}
+}
+
+/*----------------------------------------------------------------------*/
+
+.first-header > h1 {
+    color: rgb(39, 54, 14);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-shadow: 1px 1px 0px rgb(165, 184, 138), 8px 1px 0px rgba(0,0,0,0.1);
+  }
+
+.first-header > p {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin: 10px 0px 8px;
+    text-transform: capitalize;
+    color: whitesmoke;
+  }
+
+
+/*-----Mading Toko-----*/
+
+/* Tiga container gambar (gunakan 25% untuk empat dan 50% untuk dua, dll) */
+section {
+    margin: 0 25px;
+  } 
+
+h2 {
+    font-family: 'Roboto Mono',monospace;
+    text-align: center;
+  }
+
+#location-picture .right-left {
+    display: flex;
+    gap: 10px;
+  } 
+
+#location-picture .right-left >div{
+    width: 25%;
+    height: 350px;
+  }
+
+#location-picture .right-left  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+/*-----Macam-macam rempah-----*/
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-right: 10%;
+    float: left;
+    font-style: italic;
+    background-color: none;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.95em;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+#daftar-herbal{
+  margin-top: 100px;
+}
+
+#daftar-herbal .type-herbal{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(68, 103, 18, 0.3);
+    width:100%;
+    justify-content: center;
+    clear:both;
+    margin-left:auto;
+  }
+  
+#daftar-herbal .type-herbal >div{
+    background-color: #65b75c56;
+    width: 15%;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+#daftar-herbal .type-herbal  img {
+    width: 100%;
+    min-height: 150px;
+    border-radius: 15px;
+    object-fit: cover;  
+  }
+
+#daftar-herbal .type-herbal  figcaption {
+    text-align: center;
+    font-style: oblique;
+    font-size: 0.9em; 
+  }
+
+
+
+/*-----supported video user-----*/
+#how-to-use{
+    margin-top: 7%;  
+  }
+  
+#how-to-use .user-video{
+  text-align: center;
+  background-image: radial-gradient(50% 100%, rgba(100, 154, 18), rgba(208, 229, 178) 100%);
+  background-blend-mode: normal, lighten, soft-light;
+  }
+
+#how-to-use .user-video video{
+      width: 50%;
+      height: 50%;
+      margin: 10px;
+      border-radius: 15px;
+      object-fit: cover;
+  }
+
+/*-----Form for customer-----*/
+
+#form-address {
+  color: rgb(8, 8, 8);
+  background-image: radial-gradient(50% 50%, rgba(100, 154, 18, 0.589) 80%, rgba(208, 229, 178) 150%);
+  padding: 8px;
+  margin-top: 5%;  
+}
+
+#form-address form {
+  font-size: medium;
+  font-family: 'Roboto Mono',monospace;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+input[type="text"],input[type="email"], textarea {
+  width: 97.5%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+select{
+  width: 78%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: inline-block;
+
+}
+
+input[type="submit"]{
+  width: 100%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  justify-content: center;
+  display: inline-block;
+  background-color: rgba(0, 128, 0, 0.038);
+}
+
+/*-----Footer-----*/
+
+.footer{
+  width: 100%;
+    display: flex;
+    align-items: center;
+    font-style: oblique;
+    height: 55px;
+    background: linear-gradient(to top, #f05053 40%, rgb(208, 229, 178));
+    justify-content: center;
+}
+
+
+/*---Responsive Mode---*/
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 5%;
+  left: 85%;
+ 
+  z-index: 1;
+ 
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #1b3423;
+ 
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  text-decoration: none;
+  color: #de4028;
+ 
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+ 
+  cursor: pointer;
+ 
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+ 
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+ 
+  background: rgb(230, 188, 181);
+  border-radius: 3px;
+ 
+  z-index: 1;
+ 
+  transform-origin: 4px 0px;
+ 
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * membuat posisi absolute
+ * pada sisi kanan atas navigasi
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin:-100px -350px;
+  height: 655%;
+  padding: 70px;
+  padding-top: 80px;
+
+  background: rgba(123, 229, 130, 0.934);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* anti flicker pada safari*/
+ 
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0%);
+ 
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * Menyembunyikan menu
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+/*@media only screen and (min-width: 576px) {
+body { 
+  background: rgb(208, 229, 178); 
+  color: white;
+}
+}*/
+
+/*/ Medium devices (tablets, 768px and up)*/
+@media (max-width: 420px) { 
+  body{ 
+    background: rgb(184, 230, 149); 
+    color: rgb(4, 51, 4);
+ }
+
+  nav > ul > li > a {
+    display: none;
+}
+
+.malasngoding-slider { 
+	border: 1px solid #efefef00; 
+	position: static; 
+	overflow: hidden; 
+	background: #efefef00;
+}
+ 
+.malasngoding-slider { 
+	margin:10px auto;
+	width: 768px;
+	height: 450px; 
+}
+ 
+
+}
+
+@media (min-width: 420px) { 
+  body{ 
+    background: rgb(200, 229, 178); 
+    color: rgb(8, 61, 13);
+ }
+
+ .malasngoding-slider { 
+	border: 1px solid #efefef00; 
+	position: static; 
+	overflow: hidden; 
+	background: #efefef00;
+}
+ 
+.malasngoding-slider { 
+	margin:10px auto;
+	width: 768px;
+	height: 450px; 
+}
+
+ #menuToggle
+ {
+   display: none;
+
+ }
+
+}
+
