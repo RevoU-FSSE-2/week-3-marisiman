@@ -17,7 +17,8 @@ nav {
     align-items: center;
     height: 55px;
     background: linear-gradient(to bottom, #f05053 50%, rgb(208, 229, 178));
-    z-index: 99;
+    z-index: 1;
+    
   }
 
 
@@ -52,10 +53,6 @@ nav .copyright {
   right: -7px;
   }
 
-/*.desktop {
-    display: block;
-  }*/
-
 nav > ul {
     margin-left: auto;
     margin-right: 16px;
@@ -89,33 +86,34 @@ nav > ul > li > a {
 
 header {
     text-align: center;
-    background:white;
+    background:rgb(255, 255, 255);
     background-blend-mode: normal, lighten, soft-light;
     width: 100%;
     min-height: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 48px;
+    padding-top: 20px;
   }
 
 /*---------------------------mading bergerak------------------------------*/  
 .animasi-slider { 
 	position: relative; 
 	overflow: hidden; 
+	
+	width: 100%;
+	height: 300px; 
+  border-bottom: 3px;
+  border-color: #1b3423;
+  border-bottom-style: dotted;
 
 }
- 
-.animasi-slider { 
-	margin:10px auto;
-	width: 100%;
-	height: 450px; 
-}
- 
+  
 .isi-slider img { 
 	width: 10%;
-	height: 300px; 
+	height: 250px; 
 	float: left;
+  margin: 25px;
 }
  
 .isi-slider { 
@@ -124,88 +122,115 @@ header {
  
 	/*pengaturan durasi lama tampil gambar*/
 	animation-name:slider;
-	animation-duration:5s;
+	animation-duration:7s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count:infinite;
 }
  
- 
 	/*penampil animasinya*/ 
  
 @keyframes slider {     
+
 	0% {
-		left: -10px; opacity: 1; 
-	}      
-
-	10% {
-		left: -10px; opacity: 1; 
-	}     
-
-	20% {
-		left: -468px; opacity: 1; 
+		left: -40px; opacity: 0; 
 	}   
-
-  25% {
-		left: -468px; opacity: 1; 
-	}   
-    
-	35% {
-		left: -920px; opacity: 1; 
-	}     
-   
-	40% {
-		left: -920px; opacity: 1; 
-	}  
-
-	50% {
-		left: -1395px; opacity: 1; 
-	}     
-
-	55% {
-		left: -1395px; opacity: 1; 
+  
+  5% {
+		left: -80px; opacity: 1; 
 	} 
 
-	65% {
-		left: -1810px; opacity: 1; 
+	10% {
+		left: -80px; opacity: 1; 
+	}     
+
+	15% {
+		left: -605px; opacity: 1; 
+	}   
+
+  20% {
+		left: -605px; opacity: 1; 
+	}   
+    
+	25% {
+		left: -1090px; opacity: 1; 
+	}     
+   
+	30% {
+		left: -1090px; opacity: 1; 
+	}  
+
+	35% {
+		left: -1605px; opacity: 1; 
+	}     
+
+	40% {
+		left: -1605px; opacity: 1; 
+	} 
+
+	45% {
+		left: -2100px; opacity: 1; 
+	} 
+
+	50% { 
+		left: -2100px; opacity: 1; 
+	} 
+
+  55% {
+		left: -2600px; opacity: 1; 
+	} 
+
+	60% { 
+		left: -2600px; opacity: 1; 
+	} 
+
+  65% {
+		left: -3090px; opacity: 1; 
 	} 
 
 	70% { 
-		left: -1810px; opacity: 1; 
-	} 
-
-  80% {
-		left: -2270px; opacity: 1; 
-	} 
-
-	85% { 
-		left: -2270px; opacity: 1; 
+		left: -3090px; opacity: 1; 
 	} 
  
+  75% { 
+		left: -3565px; opacity: 1; 
+	} 
+
+  80% { 
+		left: -3565px; opacity: 1; 
+	} 
+
+  90% { 
+		left: -3535px; opacity: 0; 
+	} 
+
 	100% {
-		left: -10px; opacity: 1; 
+		left: -25px; opacity: 0; 
 	}
+  
 }
 
 /*----------------------------------------------------------------------*/
 
 .first-header > h1 {
-    color: rgb(39, 54, 14);
+    color: rgb(65, 101, 6);
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 50px;
+    font-size: 3.2em;
+    margin-bottom: 0;
     text-shadow: 1px 1px 0px rgb(165, 184, 138), 8px 1px 0px rgba(0,0,0,0.1);
+    background:rgb(255, 255, 255);
+    text-align: center;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 48px;
+    background-image: url("other/empon1.jpeg");
+    background-position-x: center;
+    background-position-y: -435px;
+    background-size: 100%;
   }
 
-.first-header > p {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 24px;
-    margin: 10px 0px 8px;
-    text-transform: capitalize;
-    color: whitesmoke;
-  }
 
 
 /*-----Mading Toko-----*/
@@ -216,6 +241,7 @@ section {
   } 
 
 h2 {
+  margin-top: 10%;
     font-family: 'Roboto Mono',monospace;
     text-align: center;
   }
@@ -226,7 +252,7 @@ h2 {
   } 
 
 #location-picture .right-left >div{
-    width: 25%;
+    width: 100%;
     height: 350px;
   }
 
@@ -366,13 +392,13 @@ input[type="submit"]{
 }
 
 
-/*---Responsive Mode---*/
+/*---menu responsive- mobile Mode---*/
 
 #menuToggle
 {
   display: block;
   position: relative;
-  top: 5%;
+  top: 3%;
   left: 85%;
  
   z-index: 1;
@@ -383,15 +409,15 @@ input[type="submit"]{
 
 #menuToggle a
 {
-  text-decoration: none;
-  color: #1b3423;
- 
+  text-decoration:none;
+  color: #011708;
+  font-family: 'Roboto Mono',monospace;
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover
 {
-  text-decoration: none;
+  text-decoration: underline;
   color: #de4028;
  
 }
@@ -400,7 +426,7 @@ input[type="submit"]{
 {
   display: block;
   width: 40px;
-  height: 32px;
+  height: 35px;
   position: absolute;
   top: -7px;
   left: -5px;
@@ -417,7 +443,7 @@ input[type="submit"]{
 {
   display: block;
   width: 33px;
-  height: 4px;
+  height: 5px;
   margin-bottom: 5px;
   position: relative;
  
@@ -428,9 +454,10 @@ input[type="submit"]{
  
   transform-origin: 4px 0px;
  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  transition: 
+  transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.5s ease;
 }
 
 #menuToggle span:first-child
@@ -443,26 +470,25 @@ input[type="submit"]{
   transform-origin: 0% 100%;
 }
 
+
 #menuToggle input:checked ~ span
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #043b12;
 }
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+  transform: rotate(0deg) scale(0, 0);
 }
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
-  transform: rotate(-45deg) translate(0, -1px);
+  opacity: 1;
+  transform: rotate(-45deg) translate(3px, -2px);
 }
 
-/*
- * membuat posisi absolute
- * pada sisi kanan atas navigasi
- */
+ /* membuat posisi absolute pada sisi kanan atas navigasi*/
 #menu
 {
   position: absolute;
@@ -473,20 +499,19 @@ input[type="submit"]{
   padding-top: 80px;
 
   background: rgba(123, 229, 130, 0.934);
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
+  list-style-type: circle;
+
   /* anti flicker pada safari*/
  
   transform-origin: 0% 0%;
   transform: translate(100%, 0%);
- 
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-
 
 #menu li
 {
-  padding: 10px 0;
+  padding: 9px 0;
   font-size: 22px;
 }
 
@@ -519,8 +544,117 @@ body {
     display: none;
 }
 
- 
+.first-header > h1 {
+  color: rgb(6, 84, 31);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  margin-bottom: 0;
+  text-shadow: 3.5px 1.5px 0px rgb(186, 240, 170), 8px 2px 1px rgba(9, 9, 8, 0.141);
+  background:rgb(255, 255, 255);
+  text-align: center;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 48px;
+  background-image: url("other/bubuk\ herbal1.webp");
+  background-position-x: center;
+  background-position-y: -295px;
+  background-size: 100%;
+}
 
+
+.isi-slider { 
+	position: absolute;
+	width:4500px;  
+ 
+	/*pengaturan durasi lama tampil gambar*/
+	animation-name:slider;
+	animation-duration:8s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+}
+
+@keyframes slider {     
+
+	0% {
+		left: -25px; opacity: 0; 
+	}   
+  
+  5% {
+		left: -40px; opacity: 1; 
+	} 
+
+	10% {
+		left: -40px; opacity: 1; 
+	}     
+
+	15% {
+		left: -535px; opacity: 1; 
+	}   
+
+  20% {
+		left: -535px; opacity: 1; 
+	}   
+    
+	25% {
+		left: -1050px; opacity: 1; 
+	}     
+   
+	30% {
+		left: -1050px; opacity: 1; 
+	}  
+
+	35% {
+		left: -1555px; opacity: 1; 
+	}     
+
+	40% {
+		left: -1555px; opacity: 1; 
+	} 
+
+	45% {
+		left: -2040px; opacity: 1; 
+	} 
+
+	50% { 
+		left: -2040px; opacity: 1; 
+	} 
+
+  55% {
+		left: -2550px; opacity: 1; 
+	} 
+
+	60% { 
+		left: -2550px; opacity: 1; 
+	} 
+
+  65% {
+		left: -3030px; opacity: 1; 
+	} 
+
+	70% { 
+		left: -3030px; opacity: 1; 
+	} 
+ 
+  75% { 
+		left: -3539px; opacity: 1; 
+	} 
+
+  80% { 
+		left: -3539px; opacity: 1; 
+	} 
+
+  90% { 
+		left: -3555px; opacity: 0; 
+	} 
+
+	100% {
+		left: -25px; opacity: 0; 
+	}
+  
+}
+ 
 }
 
 @media (min-width: 414px) { 
