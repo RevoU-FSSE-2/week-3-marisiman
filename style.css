@@ -376,14 +376,14 @@ article h2 {
   
 #how-to-use .user-video{
   text-align: center;
-  background-image: radial-gradient(50% 100%, rgba(100, 154, 18), rgba(208, 229, 178) 100%);
+  background-image: radial-gradient(50% 100%, rgba(208, 229, 178), rgba(100, 154, 18, 0)100%);
   background-blend-mode: normal, lighten, soft-light;
   }
 
-#how-to-use .user-video video{
-      width: 50%;
-      height: 50%;
-      margin: 10px;
+#how-to-use .user-video iframe{
+      width: 100%;
+      height: 100%;
+      margin: 5px;
       border-radius: 15px;
       object-fit: cover;
   }
@@ -392,7 +392,7 @@ article h2 {
 
 #form-address {
   color: rgb(8, 8, 8);
-  background-image: radial-gradient(50% 50%, rgba(100, 154, 18, 0.589) 80%, rgba(208, 229, 178) 150%);
+  background-image: radial-gradient(50% 50%,rgb(175, 242, 81), rgba(139, 197, 51, 0.614) 80% 150%);
   padding: 8px;
   margin-top: 5%;  
 }
@@ -424,11 +424,14 @@ select{
 
 input[type="submit"]{
   width: 100%;
+  height: 50px;
+  border-radius: 10px;
   padding: 4px 4px;
   margin: 8px 0;
   justify-content: center;
   display: inline-block;
   background-color: rgba(0, 128, 0, 0.038);
+  cursor: pointer;
 }
 
 /*-----Footer-----*/
@@ -596,6 +599,10 @@ body {
     display: none;
 }
 
+#product-picture .grid-container  img {
+border-radius: 10px;
+}
+
 figcaption {
   width: 100px;
   text-align: center;
@@ -626,6 +633,8 @@ figcaption:hover{
   display: block;
 
 }
+
+
 
 .first-header > h1 {
   color: rgb(6, 84, 31);
