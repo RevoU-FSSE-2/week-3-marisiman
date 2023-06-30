@@ -1,6 +1,8 @@
 /*-----------------------------------------------------ASSIGNMENT-WEEK-2-------------------------------------------------------------*/
 
-
+html {
+  scroll-behavior: smooth;
+  }
 
 /*-----main body-----*/
 body {
@@ -209,7 +211,7 @@ header {
   
 }
 
-/*----------------------------------------------------------------------*/
+/*-------------------------------slider animation---------------------------------------*/
 
 .first-header > h1 {
     color: rgb(65, 101, 6);
@@ -233,7 +235,7 @@ header {
 
 
 
-/*-----Mading Toko-----*/
+/*------------------------------Display Product------------------------*/
 
 /* Tiga container gambar (gunakan 25% untuk empat dan 50% untuk dua, dll) */
 section {
@@ -246,17 +248,43 @@ h2 {
     text-align: center;
   }
 
-#location-picture .right-left {
-    display: flex;
-    gap: 10px;
-  } 
+#product-picture .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 19px;
+  grid-auto-rows: 350px 350px 350px;
+}
 
-#location-picture .right-left >div{
-    width: 100%;
-    height: 350px;
+.grid-container #pict-6{
+  grid-column: 1/2 span ;
+  grid-row: 2/2 span ;
   }
 
-#location-picture .right-left  img {
+.grid-container #pict-1 {
+    grid-row: 1;
+    grid-column: 1 / 2 span;
+  }
+ 
+.grid-container #pict-3 {
+    grid-row: 1;
+    grid-column: 3 / 2 span;
+  }
+
+.grid-container #pict-8 {
+    grid-row: 2;
+    grid-column: 3 / 2 span;
+  }
+
+.product-herb-picture{
+    filter: grayscale(100%);
+    cursor: pointer;
+  }
+  
+.product-herb-picture:hover{
+    filter: none;
+  }
+
+#product-picture .grid-container  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -264,7 +292,72 @@ h2 {
 
 
 
-/*-----Macam-macam rempah-----*/
+/*----------------------------------*/
+
+article {
+
+  padding: 10px 10%;
+}
+
+article h2 {
+  padding-top: 35px;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "nocturne-serif", serif;
+}
+
+.forbidden-spell {
+  padding: 20px 0;
+  display: flexbox;
+  gap: 20px;
+  justify-content: center;
+}
+
+.container-crucio {
+  display: flex;
+  padding: 20px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid;
+  border-color: #bd8f07;
+  border-radius: 20px;
+  flex-basis: 33.33%;
+}
+
+.container-imperio {
+  display: flex;
+  padding: 20px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid;
+  border-color: #bd8f07;
+  border-radius: 20px;
+  flex-basis: 33.33%;
+}
+
+.container-avada {
+  display: flex;
+  padding: 20px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid;
+  border-color: #bd8f07;
+  border-radius: 20px;
+  flex-basis: 33.33%;
+}
+
+.spell-icon {
+  width: 60%;
+  height: 30%;
+}
+
+
+/*---------------------------------*/
+
+/*-----Macam-macam rempah-----
 
 aside {
     width: 30%;
@@ -315,7 +408,7 @@ aside {
     font-size: 0.9em; 
   }
 
-
+-------------------------------------------*/
 
 /*-----supported video user-----*/
 #how-to-use{
@@ -544,6 +637,22 @@ body {
     display: none;
 }
 
+.spell-detail {
+  font-family: "nocturne-serif-lights", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  width: 80%;
+  text-align: justify;
+}
+
+
+#product-picture .grid-container {
+  display: block;
+
+}
+
 .first-header > h1 {
   color: rgb(6, 84, 31);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -559,7 +668,7 @@ body {
   padding-top: 48px;
   background-image: url("other/bubuk\ herbal1.webp");
   background-position-x: center;
-  background-position-y: -295px;
+  background-position-y: -270px;
   background-size: 100%;
 }
 
@@ -659,7 +768,7 @@ body {
 
 @media (min-width: 414px) { 
   body{ 
-    background: rgb(200, 229, 178); 
+    background: white; 
     color: rgb(8, 61, 13);
  }
 
