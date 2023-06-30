@@ -229,7 +229,7 @@ header {
     padding-top: 48px;
     background-image: url("other/empon1.jpeg");
     background-position-x: center;
-    background-position-y: -435px;
+    background-position-y: -340px;
     background-size: 100%;
   }
 
@@ -251,7 +251,7 @@ h2 {
 #product-picture .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 19px;
+  grid-gap: 20px;
   grid-auto-rows: 350px 350px 350px;
 }
 
@@ -290,7 +290,20 @@ h2 {
     object-fit: cover;
   }
 
+figcaption {
+  width: 100px;
+  text-align: center;
+  background: white;
+  transition: all 0.5s cubic-bezier(.14,.93,.69,.06);
+  color: black;
+  cursor: pointer;
+}
 
+figcaption:hover{
+  width: 370px;
+  background: #bd8f07;
+  color: aliceblue;
+}
 
 /*----------------------------------*/
 
@@ -306,14 +319,15 @@ article h2 {
   font-family: "nocturne-serif", serif;
 }
 
-.forbidden-spell {
+.herb-spell {
   padding: 20px 0;
-  display: flexbox;
-  gap: 20px;
+  display: flow-root;
+  row-gap: 50px;
   justify-content: center;
+  cursor: pointer;
 }
 
-.container-crucio {
+.container-boil {
   display: flex;
   padding: 20px 20px;
   flex-direction: column;
@@ -325,7 +339,7 @@ article h2 {
   flex-basis: 33.33%;
 }
 
-.container-imperio {
+.container-brew {
   display: flex;
   padding: 20px 20px;
   flex-direction: column;
@@ -337,7 +351,7 @@ article h2 {
   flex-basis: 33.33%;
 }
 
-.container-avada {
+.container-extract {
   display: flex;
   padding: 20px 20px;
   flex-direction: column;
@@ -349,66 +363,11 @@ article h2 {
   flex-basis: 33.33%;
 }
 
-.spell-icon {
+.herb-icon {
   width: 60%;
   height: 30%;
 }
 
-
-/*---------------------------------*/
-
-/*-----Macam-macam rempah-----
-
-aside {
-    width: 30%;
-    padding-left: 15px;
-    margin-right: 10%;
-    float: left;
-    font-style: italic;
-    background-color: none;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 0.95em;
-    font-style: normal;
-    font-weight: bold;
-  }
-
-#daftar-herbal{
-  margin-top: 100px;
-}
-
-#daftar-herbal .type-herbal{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(68, 103, 18, 0.3);
-    width:100%;
-    justify-content: center;
-    clear:both;
-    margin-left:auto;
-  }
-  
-#daftar-herbal .type-herbal >div{
-    background-color: #65b75c56;
-    width: 15%;
-    margin-left: 10px;
-    margin-right: 0px;
-    margin-top: 50px;
-    margin-bottom: 0;
-  }
-
-#daftar-herbal .type-herbal  img {
-    width: 100%;
-    min-height: 150px;
-    border-radius: 15px;
-    object-fit: cover;  
-  }
-
-#daftar-herbal .type-herbal  figcaption {
-    text-align: center;
-    font-style: oblique;
-    font-size: 0.9em; 
-  }
-
--------------------------------------------*/
 
 /*-----supported video user-----*/
 #how-to-use{
@@ -637,7 +596,22 @@ body {
     display: none;
 }
 
-.spell-detail {
+figcaption {
+  width: 100px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.015);
+  transition: all 0.5s cubic-bezier(.14,.93,.69,.06);
+  color: black;
+  cursor: pointer;
+}
+
+figcaption:hover{
+  width: 100%;
+  background: #bd8f07;
+  color: aliceblue;
+}
+
+.herb-detail {
   font-family: "nocturne-serif-lights", serif;
   font-weight: 400;
   font-style: normal;
@@ -765,6 +739,8 @@ body {
 }
  
 }
+
+
 
 @media (min-width: 414px) { 
   body{ 
