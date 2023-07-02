@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Iman-Week2</title>
+    <meta name="description" content="Assigntment Week3">
+    <meta name="author" content="Iman Maris">
+    <meta name="keywords" content="HTML,CSS">
+    <title>Assignment Week 3 by Iman</title>
 
     <link rel="stylesheet" href="/style.css">
 </head>
@@ -165,39 +168,61 @@
                 </br>
                 4. Increases Body Endurance</br>
 
-            </br></br>
-            There are various ways of processing use, including:
-            </p>
-      
-            <section class="herb-spell">
-
-              <div class="container-boil">
-                <img class="herb-icon" src="/other/direbus.jpg" alt="rebus">
-                <p class="herb-detail">Boiling, Traditional Ways of Processing herbs</p>
-              </div>
-      
-              <div class="container-brew">
-                <img class="herb-icon" src="/other/diseduh.jpg" alt="seduh">
-                <p class="herb-detail">Processing Techniques by Brewing</p>
-              </div>
-      
-              <div class="container-extract">
-                <img class="herb-icon" src="/other/diekstrak.jpg" alt="ekstak">
-                <p class="herb-detail">Extraction of Medicinal Herbs, Modern Ways of Processing Herbs</p>
-              </div>
-
-            </section>
         </article>
 
-        <section id="how-to-use">
-            <h2>This Video is An example of used </h2>
-                <div class="user-video">
-
-                    <div class="video-1">
-                        <iframe title="video" src="other/video pengolahan rempah.mp4" frameborder="0" allowfullscreen></iframe>
-                    </div>
+        <section class="processing-method">
+            <h2>
+                There are various ways of processing use, including:
+            </h2>
+            <div class="herb-processing-method">
+                <div class="slide-container">
+                    <div class="slider">
+                        <input type="radio" name="dot" id="dot1" checked>
+                        <input type="radio" name="dot" id="dot2">
+                        <input type="radio" name="dot" id="dot3">
                         
-                </div>
+                        <picture class="slide-img" id="slide1">
+                            <source media="(max-width:599px)" srcset="./other/direbus.jpg 500w"/>
+                            <source media="(min-width:600px)" srcset="./other/direbus.jpg 700w"/>
+                            <img src="./other/direbus.jpg" alt="boil process">
+                            <label for="dot3" class="pre"></label>
+                            <label for="dot2" class="next"></label>
+                        </picture>
+                        <picture class="slide-img" id="slide2">
+                            <source media="(max-width:599px)" srcset="./other/diseduh.jpg 500w"/>
+                            <source media="(min-width:600px)" srcset="./other/diseduh.jpg 700w"/>
+                            <img src="./other/diseduh.jpg" alt="brew process">
+                            <label for="dot1" class="pre"></label>
+                            <label for="dot3" class="next"></label>
+                        </picture>
+                        <picture class="slide-img" id="slide3">
+                            <source media="(max-width:599px)" srcset="./other/diekstrak.jpg 500w"/>
+                            <source media="(min-width:600px)" srcset="./other/diekstrak.jpg 700w"/>
+                            <img src="./other/diekstrak.jpg" alt="extract process">
+                            <label for="dot2" class="pre"></label>
+                            <label for="dot1" class="next"></label>
+                        </picture>
+
+                        <div class="silder-nav">
+                            <label for="dot1" class="bar" id="bar1"></label>
+                            <label for="dot2" class="bar" id="bar2"></label>
+                            <label for="dot3" class="bar" id="bar3"></label>
+
+                        </div>
+                    </div>
+                </div>     
+                <ul>
+                     <li>
+                        <label for="dot1">Boiling, Traditional Ways of Processing herbs</label>
+                    </li>
+                    <li>
+                        <label for="dot2">Processing Techniques by Brewing</label>
+                    </li>
+                    <li>
+                        <label for="dot3">Extraction, Modern Ways of Processing Herbs</label>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section id="form-address">
@@ -223,6 +248,14 @@
                             <p>Your Address or Destination Adress:</p>
                             <textarea for="addres"></textarea>
                         </div>
+
+                        <div>
+                            <p>Upload Your ID Card Photo:</p>
+                            <label for="upload" id="upload-btn">Choose File</label>
+                            <input type="file" id="upload" name="id card" accept="image/png, image/jpeg" required>
+                        </div></br>
+
+
 
                     </fieldset>
 
@@ -278,6 +311,11 @@
                             <label for="sicepat">SiCepat</label>
                         </p></br>
 
+                        <div>
+                            <label for="edate">Date of Order</label>
+                            <input type="date" id="edate" name="edate" min="2023-07-01" required=""><br>
+                        </div>
+
                         <p>Delivery Speed:</p>
                         <p>
                             <input type="radio" name="type-delivery" value="regular" id="regular">
@@ -292,7 +330,7 @@
                     </fieldset>
                     <div>
                         <p>
-                            <input type="submit" value="Order Here">
+                            <input type="submit" value="ORDER HERE">
                         </p>
                     </div>
 
